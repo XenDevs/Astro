@@ -1,13 +1,12 @@
 {
-  "name": "55gms",
+  "name": "astro",
   "version": "2.0.1",
-  "description": "55gms game site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "XenonNet",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "@tomphttp/bare-server-node": "2.0.1",
     "cors": "^2.8.5",

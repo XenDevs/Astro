@@ -32,8 +32,8 @@
 }
 .navbar a:not(:first-child):hover {
   font-size: 18px;
-  color: #484c51; /* #bbbbbb is og */
-  background-color: #e7928f;
+  color: #fff; /* #bbbbbb is og */
+  background-color: #6495ED;
   border-radius: 10px;
   scale: 1.05;
 }
@@ -48,8 +48,8 @@
 }
 .navbar a:first-child:hover {
   transform: translateX(10px);
-  color: #484c51; /* #bbbbbb is og */
-  background-color: #e7928f;
+  color: #fff; /* #bbbbbb is og */
+  background-color: #6495ED;
   border-radius: 10px;
   scale: 1.1;
 }

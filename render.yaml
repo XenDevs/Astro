@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: gms
+    name: astro
     env: node
     plan: free
-    startCommand: node .
+    startCommand: pnpm start

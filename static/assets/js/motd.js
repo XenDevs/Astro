@@ -9,7 +9,7 @@ window.addEventListener("load", (event) => {
         }
         // Change color to red if the message has not been viewed
         if (localStorage.getItem(`${type}-viewed`) != "true") {
-          document.getElementById(type).style.color = "#fc8585";
+          document.getElementById(type).style.color = "#6495ED";
           document.getElementById(type).classList.add("pulse");
         }
       });

@@ -2,10 +2,10 @@
 
 .navbar {
   box-sizing: border-box;
-  background: #5e7594;
+  background: #222;
   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-  backdrop-filter: #5e7594;
-  -webkit-backdrop-filter: #5e7594;
+  backdrop-filter: #222;
+  -webkit-backdrop-filter: #222;
   transition: 0.35s ease;
   border-radius: 20px;
   width: fill;

@@ -12,7 +12,7 @@ function search() {
   }
   const noResultsElement = document.getElementById("no-results");
   if (noResultsElement) {
-    if (results == 0) {
+    if (results === 0) {
       noResultsElement.style.display = "block";
     } else {
       noResultsElement.style.display = "none";
@@ -38,5 +38,5 @@ document.addEventListener("keydown", e => {
 
   const searchbar = document.getElementById("searchbar");
   searchbar.focus();
-  if (e.toLowerCase() != e.toUpperCase()) searchbar.value += e.key;
+  if (e.toLowerCase() !== e.toUpperCase()) searchbar.value += e.key;
 });

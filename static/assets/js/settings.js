@@ -1,183 +1,142 @@
-var cloakElement;
+let cloakElement;
 
 document.addEventListener("DOMContentLoaded", () => {
   cloakElement = document.getElementById("premadecloaks");
-  var cloak = cloakElement.value;
+  const cloak = cloakElement.value;
+
+  const tab = localStorage.getItem("tab");
+  let tabData = {};
+  if (tab) {
+    try {
+      tabData = JSON.parse(tab);
+    } catch {
+      tabData = {};
+    }
+  }
+
+  const titleElement = document.getElementById("title");
+  const iconElement = document.getElementById("icon");
+
+  if (tabData.title && titleElement) titleElement.value = tabData.title;
+  if (tabData.icon && iconElement) iconElement.value = tabData.icon;
+
+  const panicKey = localStorage.getItem("panicKey") || "`";
+  const panicLink =
+    localStorage.getItem("PanicLink") || "https://canvas.houstonisd.org/";
+
+  if (document.getElementById("key"))
+    document.getElementById("key").value = panicKey;
+  if (document.getElementById("link"))
+    document.getElementById("link").value = panicLink;
 });
 
-var tab = localStorage.getItem("tab");
-if (tab) {
-  try {
-    var tabData = JSON.parse(tab);
-  } catch {
-    var tabData = {};
-  }
-} else {
-  var tabData = {};
-}
-
-var titleElement = document.getElementById("title");
-var iconElement = document.getElementById("icon");
-
-if (tabData.title && titleElement) titleElement.value = tabData.title;
-if (tabData.icon && iconElement) iconElement.value = tabData.icon;
-
-var settingsDefaultTab = {
+const settingsDefaultTab = {
   title: "Dashboard",
   icon: "/img/canvas.ico",
 };
 
 function setTitle(title = "") {
-  if (title) {
-    document.title = title;
-  } else {
-    document.title = settingsDefaultTab.title;
-  }
+  document.title = title || settingsDefaultTab.title;
 
-  var tab = localStorage.getItem("tab");
-
+  const tab = localStorage.getItem("tab");
+  let tabData = {};
   if (tab) {
     try {
-      var tabData = JSON.parse(tab);
+      tabData = JSON.parse(tab);
     } catch {
-      var tabData = {};
+      tabData = {};
     }
-  } else {
-    var tabData = {};
   }
 
-  if (title) {
-    tabData.title = title;
-  } else {
-    delete tabData.title;
-  }
-
+  tabData.title = title || undefined;
   localStorage.setItem("tab", JSON.stringify(tabData));
 }
 
 function setFavicon(icon) {
-  if (icon) {
-    document.querySelector("link[rel='icon']").href = icon;
-  } else {
-    document.querySelector("link[rel='icon']").href = settingsDefaultTab.icon;
-  }
+  document.querySelector("link[rel='icon']").href = icon || settingsDefaultTab.icon;
 
-  var tab = localStorage.getItem("tab");
-
+  const tab = localStorage.getItem("tab");
+  let tabData = {};
   if (tab) {
     try {
-      var tabData = JSON.parse(tab);
+      tabData = JSON.parse(tab);
     } catch {
-      var tabData = {};
+      tabData = {};
     }
-  } else {
-    var tabData = {};
   }
 
-  if (icon) {
-    tabData.icon = icon;
-  } else {
-    delete tabData.icon;
-  }
-
+  tabData.icon = icon || undefined;
   localStorage.setItem("tab", JSON.stringify(tabData));
 }
 
 function setCloak() {
-  var cloak = cloakElement.value;
+  const cloak = cloakElement.value;
 
-  switch (cloak) {
-    case "search":
-      setTitle("Google");
-      setFavicon("/assets/cloaks/Google Search.ico");
-      break;
-    case "wikipedia":
-      setTitle("Wikipedia, the free encyclopedia");
-      setFavicon("/assets/cloaks/Wikipedia.ico");
-      break;
-    case "bsite":
-      setTitle("Billibilli");
-      setFavicon("/assets/cloaks/Billibilli.ico");
-      break;
-    case "drive":
-      setTitle("My Drive - Google Drive");
-      setFavicon("/assets/cloaks/Google Drive.ico");
-      break;
-    case "gmail":
-      setTitle("Gmail");
-      setFavicon("/assets/cloaks/Gmail.ico");
-      break;
-    case "calendar":
-      setTitle("Google Calendar");
-      setFavicon("/assets/cloaks/Calendar.ico");
-      break;
-    case "meets":
-      setTitle("Google Meet");
-      setFavicon("/assets/cloaks/Meet.ico");
-      break;
-    case "classroom":
-      setTitle("Classes");
-      setFavicon("/assets/cloaks/Classroom.png");
-      break;
-    case "canvas":
-      setTitle("Dashboard");
-      setFavicon("/assets/cloaks/Canvas.ico");
-      break;
-    case "zoom":
-      setTitle("Zoom");
-      setFavicon("/assets/cloaks/Zoom.ico");
-      break;
-    case "khan":
-      setTitle("Dashboard | Khan Academy");
-      setFavicon("/assets/cloaks/Khan Academy.ico");
-      break;
-    case "itchio":
-      setTitle("Download the latest indie games - itch.io");
-      setFavicon("/assets/cloaks/itchio.ico");
-      break;
-    case "deltamath":
-      setTitle("DeltaMath Student Application");
-      setFavicon("/assets/cloaks/deltamath.png");
-      break;
-    case "ed":
-      setTitle("Edpuzzle");
-      setFavicon("/assets/cloaks/edpuzzle.png");
-      break;
-  }
+  const cloakSettings = {
+    search: { title: "Google", favicon: "/assets/cloaks/Google Search.ico" },
+    wikipedia: {
+      title: "Wikipedia, the free encyclopedia",
+      favicon: "/assets/cloaks/Wikipedia.ico",
+    },
+    bsite: { title: "Billibilli", favicon: "/assets/cloaks/Billibilli.ico" },
+    drive: {
+      title: "My Drive - Google Drive",
+      favicon: "/assets/cloaks/Google Drive.ico",
+    },
+    gmail: { title: "Gmail", favicon: "/assets/cloaks/Gmail.ico" },
+    calendar: { title: "Google Calendar", favicon: "/assets/cloaks/Calendar.ico" },
+    meets: { title: "Google Meet", favicon: "/assets/cloaks/Meet.ico" },
+    classroom: { title: "Classes", favicon: "/assets/cloaks/Classroom.png" },
+    canvas: { title: "Dashboard", favicon: "/assets/cloaks/Canvas.ico" },
+    zoom: { title: "Zoom", favicon: "/assets/cloaks/Zoom.ico" },
+    khan: {
+      title: "Dashboard | Khan Academy",
+      favicon: "/assets/cloaks/Khan Academy.ico",
+    },
+    itchio: {
+      title: "Download the latest indie games - itch.io",
+      favicon: "/assets/cloaks/itchio.ico",
+    },
+    deltamath: {
+      title: "DeltaMath Student Application",
+      favicon: "/assets/cloaks/deltamath.png",
+    },
+    ed: { title: "Edpuzzle", favicon: "/assets/cloaks/edpuzzle.png" },
+  };
+
+  const settings = cloakSettings[cloak] || {
+    title: "Dashboard",
+    favicon: "/assets/cloaks/Canvas.ico",
+  };
+  setTitle(settings.title);
+  setFavicon(settings.favicon);
 }
+
 function resetTab() {
   document.title = "Dashboard";
   document.querySelector("link[rel='icon']").href = "/img/canvas.ico";
-  document.getElementById("title").value = "";
-  document.getElementById("icon").value = "";
+  const titleElement = document.getElementById("title");
+  const iconElement = document.getElementById("icon");
+  if (titleElement) titleElement.value = "";
+  if (iconElement) iconElement.value = "";
   localStorage.setItem("tab", JSON.stringify({}));
 }
 
-var panicKey = localStorage.getItem("panicKey") || "`";
-var panicLink =
-  localStorage.getItem("PanicLink") || "https://canvas.houstonisd.org/";
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("key").value = panicKey;
-  document.getElementById("link").value = panicLink;
-});
-
 function setPanicKey() {
-  var key = document.getElementById("key").value;
+  const key = document.getElementById("key").value;
   localStorage.setItem("panicKey", key);
 }
 
 function setPanicLink() {
-  var link = document.getElementById("link").value;
+  const link = document.getElementById("link").value;
   localStorage.setItem("PanicLink", link);
 }
 
 function cloak() {
   let inFrame;
-
   try {
     inFrame = window !== top;
-  } catch (e) {
+  } catch {
     inFrame = true;
   }
 
@@ -188,27 +147,37 @@ function cloak() {
     } else {
       const doc = popup.document;
       const iframe = doc.createElement("iframe");
-      const style = iframe.style;
       const link = doc.createElement("link");
 
-      const name = tabData.title || "Dashboard";
-      const icon = tabData.icon || "/img/canvas.ico";
+      const tab = localStorage.getItem("tab");
+      let tabData = { title: "Dashboard", icon: "/img/canvas.ico" };
+      if (tab) {
+        try {
+          tabData = JSON.parse(tab);
+        } catch {
+          tabData = { title: "Dashboard", icon: "/img/canvas.ico" };
+        }
+      }
 
-      doc.title = name;
+      doc.title = tabData.title;
       link.rel = "icon";
-      link.href = icon;
+      link.href = tabData.icon;
 
       iframe.src = location.href;
-      style.position = "fixed";
-      style.top = style.bottom = style.left = style.right = 0;
-      style.border = style.outline = "none";
-      style.width = style.height = "100%";
+      iframe.style.position = "fixed";
+      iframe.style.top =
+        iframe.style.bottom =
+        iframe.style.left =
+        iframe.style.right =
+          0;
+      iframe.style.border = iframe.style.outline = "none";
+      iframe.style.width = iframe.style.height = "100%";
 
       doc.head.appendChild(link);
       doc.body.appendChild(iframe);
 
       const pLink =
-        localStorage.getItem(encodeURI("pLink")) || "https://canvas.houstonisd.org/";
+        localStorage.getItem("pLink") || "https://canvas.houstonisd.org/";
       location.replace(pLink);
 
       const script = doc.createElement("script");
@@ -224,52 +193,10 @@ function cloak() {
   }
 }
 
-var months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-function convertDate(date_str) {
-  temp_date = date_str.split("-");
-  return temp_date[2] + " " + months[Number(temp_date[1]) - 1] + " " + temp_date[0];
-}
-var months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-function convertDate(date_str) {
-  temp_date = date_str.split("-");
-  return months[Number(temp_date[1]) - 1] + " " + temp_date[2] + ", " + temp_date[0];
-}
-
 fetch("https://api.github.com/repos/55gms/55gms/commits")
   .then(response => response.json())
   .then(data => {
-    var unformatted = new Date(data[0].commit.author.date)
-      .toISOString()
-      .split("T")[0];
-    var lastCommitDate = convertDate(unformatted);
+    const lastCommitDate = new Date(data[0].commit.author.date).toLocaleDateString();
     document.querySelector("#updated").textContent =
       `Last Updated: ${lastCommitDate}`;
   });

@@ -17,7 +17,7 @@ async function loadNewPage(url) {
   } else if (!(url.startsWith("https://") || url.startsWith("http://"))) {
     url = `https://${url}`;
   }
-  
+
   let urlEncoded = __uv$config.encodeUrl(url);
   urlEncoded = `/assets/uv/service/${urlEncoded}`;
 

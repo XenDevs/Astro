@@ -1,8 +1,8 @@
 {
-    "schedule": "daily",
-    "aggressiveCompression": true, 
-    "compressWiki": true, 
-    "minKBReduced": null,
-    "prTitle": "Compressed images", 
-    "prBody": "Text before optimization ratio: {optimization_ratio}\nText after optimization ratio: {optimization_ratio}\n\nText before optimization details: {optimization_details}\nText after optimization details: {optimization_details}"
+  "schedule": "daily",
+  "aggressiveCompression": true,
+  "compressWiki": true,
+  "minKBReduced": null,
+  "prTitle": "Compressed images",
+  "prBody": "Text before optimization ratio: {optimization_ratio}\nText after optimization ratio: {optimization_ratio}\n\nText before optimization details: {optimization_details}\nText after optimization details: {optimization_details}"
 }

@@ -1,8 +1,8 @@
 const form = document.querySelector(".searchbar");
 const input = document.querySelector("input");
 
-document.addEventListener("DOMContentLoaded", function () {
-  form.addEventListener("submit", async (event) => {
+document.addEventListener("DOMContentLoaded", () => {
+  form.addEventListener("submit", async event => {
     event.preventDefault();
     window.navigator.serviceWorker
       .register("/assets/uv/sw.js", {
@@ -20,10 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function isUrl(val = "") {
-  if (
-    /^http(s?):\/\//.test(val) ||
-    (val.includes(".") && val.slice(0, 1) !== " ")
-  )
+  if (/^http(s?):\/\//.test(val) || (val.includes(".") && val.slice(0, 1) !== " "))
     return true;
   return false;
 }

@@ -1,5 +1,5 @@
 function hire(value) {
-  let iframe = document.querySelector(".iframe.active");
+  const iframe = document.querySelector(".iframe.active");
 
   window.navigator.serviceWorker
     .register("/assets/uv/sw.js", {
@@ -25,7 +25,7 @@ function isUrl(str = "") {
       "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
       "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
       "(\\#[-a-z\\d_]*)?$",
-    "i"
+    "i",
   ); // fragment locator
   return !!pattern.test(str);
 }

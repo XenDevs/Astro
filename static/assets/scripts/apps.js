@@ -2,7 +2,7 @@ window.addEventListener("load", async () => {
   const gameContainer = document.getElementById("game-container");
 
   try {
-    const response = await fetch("/assets/json/load/apps.json");
+    const response = await fetch("/assets/json/apps.json");
     const apps = await response.json();
 
     apps.sort((a, b) => a.name.localeCompare(b.name));

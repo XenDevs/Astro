@@ -8,7 +8,7 @@
       "package.json",
       "*.md",
       "bun.lockb",
-      "static/assets/js/font.js"
+      "static/assets/scripts/font.js"
     ]
   },
   "organizeImports": {

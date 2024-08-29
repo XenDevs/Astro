@@ -29,9 +29,7 @@ const routes = [
   { path: "/!", file: "!.html" },
   { path: "/", file: "index.html" },
   { path: "/d", file: "dashboard.html" },
-  { path: "/e", file: "english.html" },
   { path: "/-", file: "math.html" },
-  { path: "/l", file: "/assets/404/loading.html" },
 ];
 
 routes.forEach(route => {
@@ -109,13 +107,13 @@ server.on("upgrade", (req, socket, head) => {
   }
 });
 
-app.get("/*", (req, res) => {
+/* app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "static/404.html"), err => {
     if (err) {
       res.status(404).send(err);
     }
   });
-});
+}); */
 
 server.on("listening", () => {
   console.log(`Running at http://localhost:8080`);

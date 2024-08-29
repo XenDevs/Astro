@@ -1,9 +1,9 @@
 function fetchTmdbId() {
-  let search = document.getElementById("searchbar").value;
+  const search = document.getElementById("searchbar").value;
   let link;
   let poster;
-  let encodedSearch = encodeURIComponent(search);
-  let url =
+  const encodedSearch = encodeURIComponent(search);
+  const url =
     "https://api.themoviedb.org/3/search/multi?api_key=66ca93aa37686b7a47476585271855c6&language=en-US&query=" +
     encodedSearch +
     "&page=1&include_adult=false";
@@ -12,10 +12,10 @@ function fetchTmdbId() {
 
   try {
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         const results = data.results;
-        results.forEach(function (movie) {
+        results.forEach(movie => {
           let poster;
           if (movie.poster_path === null || !movie.poster_path) {
             poster = "/img/no-media.svg";
@@ -73,24 +73,22 @@ function getRandomLink(videoId, season = null, episode = null) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   let cooldown = false;
 
-  document
-    .getElementById("searchbar")
-    .addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        if (cooldown) {
-          document.getElementById("cooldownNotice").style.display = "block";
-        } else {
-          fetchTmdbId();
+  document.getElementById("searchbar").addEventListener("keypress", e => {
+    if (e.key === "Enter") {
+      if (cooldown) {
+        document.getElementById("cooldownNotice").style.display = "block";
+      } else {
+        fetchTmdbId();
+        document.getElementById("cooldownNotice").style.display = "none";
+        cooldown = true;
+        setTimeout(() => {
+          cooldown = false;
           document.getElementById("cooldownNotice").style.display = "none";
-          cooldown = true;
-          setTimeout(function () {
-            cooldown = false;
-            document.getElementById("cooldownNotice").style.display = "none";
-          }, 3000);
-        }
+        }, 3000);
       }
-    });
+    }
+  });
 });

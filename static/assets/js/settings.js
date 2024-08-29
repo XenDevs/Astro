@@ -1,6 +1,6 @@
 var cloakElement;
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   cloakElement = document.getElementById("premadecloaks");
   var cloak = cloakElement.value;
 });
@@ -157,7 +157,7 @@ var panicKey = localStorage.getItem("panicKey") || "`";
 var panicLink =
   localStorage.getItem("PanicLink") || "https://canvas.houstonisd.org/";
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("key").value = panicKey;
   document.getElementById("link").value = panicLink;
 });
@@ -208,8 +208,7 @@ function cloak() {
       doc.body.appendChild(iframe);
 
       const pLink =
-        localStorage.getItem(encodeURI("pLink")) ||
-        "https://canvas.houstonisd.org/";
+        localStorage.getItem(encodeURI("pLink")) || "https://canvas.houstonisd.org/";
       location.replace(pLink);
 
       const script = doc.createElement("script");
@@ -242,9 +241,7 @@ var months = [
 
 function convertDate(date_str) {
   temp_date = date_str.split("-");
-  return (
-    temp_date[2] + " " + months[Number(temp_date[1]) - 1] + " " + temp_date[0]
-  );
+  return temp_date[2] + " " + months[Number(temp_date[1]) - 1] + " " + temp_date[0];
 }
 var months = [
   "January",
@@ -263,14 +260,12 @@ var months = [
 
 function convertDate(date_str) {
   temp_date = date_str.split("-");
-  return (
-    months[Number(temp_date[1]) - 1] + " " + temp_date[2] + ", " + temp_date[0]
-  );
+  return months[Number(temp_date[1]) - 1] + " " + temp_date[2] + ", " + temp_date[0];
 }
 
 fetch("https://api.github.com/repos/55gms/55gms/commits")
-  .then((response) => response.json())
-  .then((data) => {
+  .then(response => response.json())
+  .then(data => {
     var unformatted = new Date(data[0].commit.author.date)
       .toISOString()
       .split("T")[0];

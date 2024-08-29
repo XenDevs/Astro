@@ -1,0 +1,8 @@
+{
+  "name": "astro",
+  "description": "?",
+  "repository": "https://github.com/xenonnet/astro",
+  "logo": "https://avatars.githubusercontent.com/u/171811271",
+  "keywords": ["astro", "math"],
+  "image": "heroku/nodejs"
+}

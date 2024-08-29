@@ -34,7 +34,7 @@ const routes = [
   { path: "/l", file: "/assets/404/loading.html" },
 ];
 
-routes.forEach((route) => {
+routes.forEach(route => {
   app.get(route.path, (req, res) => {
     res.sendFile(path.join(__dirname, "static", route.file));
   });
@@ -45,13 +45,7 @@ app.get("/misc/*", async (req, res, next) => {
   const secondaryUrl = "https://raw.githubusercontent.com/22yeets22/a/main";
   await fetchDataFromGithub(req, res, next, baseUrl, secondaryUrl);
 });
-async function fetchDataFromGithub(
-  req,
-  res,
-  next,
-  baseUrl,
-  secondaryUrl = null,
-) {
+async function fetchDataFromGithub(req, res, next, baseUrl, secondaryUrl = null) {
   function isAFile(urlString) {
     return urlString.trim().split("/").pop().length !== 0;
   }
@@ -115,8 +109,8 @@ server.on("upgrade", (req, socket, head) => {
   }
 });
 
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "static/404.html"), function (err) {
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "static/404.html"), err => {
     if (err) {
       res.status(404).send(err);
     }
@@ -131,6 +125,6 @@ server.listen({
   port: 8080,
 });
 
-server.on("error", (error) => {
+server.on("error", error => {
   console.error("Server error:", error);
 });

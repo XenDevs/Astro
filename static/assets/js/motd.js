@@ -1,9 +1,9 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", event => {
   fetch("/assets/json/motd.json")
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
       // Alert user if there is unread messages
-      ["motd", "qotd"].forEach((type) => {
+      ["motd", "qotd"].forEach(type => {
         if (localStorage.getItem(`${type}-last-body`) != data[type].body) {
           localStorage.setItem(`${type}-viewed`, "false");
         }
@@ -21,7 +21,7 @@ window.addEventListener("load", (event) => {
           title: title,
           html: body,
           footer: `<i style='font-size: 11px;'>submitted by ${footer}</i>`,
-        }).then((response) => {
+        }).then(response => {
           localStorage.setItem(`${type}-last-body`, body);
           localStorage.setItem(`${type}-viewed`, "true");
           document.getElementById(type).style.color = "#f8f4f4";
@@ -31,21 +31,11 @@ window.addEventListener("load", (event) => {
 
       // Set onclick events for motd and qotd
       document.getElementById("motd").onclick = () =>
-        createModal(
-          "motd",
-          "Message Of The Day",
-          data.motd.body,
-          data.motd.footer,
-        );
+        createModal("motd", "Message Of The Day", data.motd.body, data.motd.footer);
       document.getElementById("qotd").onclick = () =>
-        createModal(
-          "qotd",
-          "Quote Of The Day",
-          data.qotd.body,
-          data.qotd.footer,
-        );
+        createModal("qotd", "Quote Of The Day", data.qotd.body, data.qotd.footer);
     })
-    .catch((error) => {
+    .catch(error => {
       console.error("An error occurred:", error);
       // Display a generic error message to the user
       const displayError = () => {

@@ -1,8 +1,5 @@
 function isUrl(val = "") {
-  if (
-    /^http(s?):\/\//.test(val) ||
-    (val.includes(".") && val.slice(0, 1) !== " ")
-  )
+  if (/^http(s?):\/\//.test(val) || (val.includes(".") && val.slice(0, 1) !== " "))
     return true;
   return false;
 }
@@ -27,7 +24,7 @@ function loadNewPage(url) {
   searchBar.value = url;
 }
 
-window.addEventListener("load", function () {
+window.addEventListener("load", () => {
   let encodedUrl = sessionStorage.getItem("encodedUrl");
   encodedUrl = "/assets/uv/service/" + encodedUrl;
   console.log(encodedUrl);
@@ -38,17 +35,14 @@ window.addEventListener("load", function () {
     console.error('Iframe with id "iframeid" does not exist');
   }
 });
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", () => {
   const searchBar = document.getElementById("searchBar");
   if (searchBar) {
-    searchBar.setAttribute(
-      "value",
-      decodeURL(sessionStorage.getItem("encodedUrl")),
-    );
+    searchBar.setAttribute("value", decodeURL(sessionStorage.getItem("encodedUrl")));
     // search bar functionality
-    searchBar.addEventListener("keydown", function (event) {
+    searchBar.addEventListener("keydown", event => {
       if (event.key === "Enter") {
-        let url = searchBar.value.trim();
+        const url = searchBar.value.trim();
         loadNewPage(url);
       }
     });
@@ -60,11 +54,8 @@ window.addEventListener("DOMContentLoaded", function () {
 function reload() {
   document.getElementById("iframeid").contentWindow.location.reload();
 }
-document.onfullscreenchange = function () {
-  document.body.classList.toggle(
-    "fullscreen-active",
-    document.fullscreenElement,
-  );
+document.onfullscreenchange = () => {
+  document.body.classList.toggle("fullscreen-active", document.fullscreenElement);
   iframe = document.getElementById("iframeid");
   if (document.fullscreenElement) {
     iframe.style.height = "100vh";
@@ -93,9 +84,9 @@ function erudaToggle() {
   if (erudaWindow.eruda?._isInit) {
     erudaWindow.eruda.destroy();
   } else {
-    let script = erudaDocument.createElement("script");
+    const script = erudaDocument.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/eruda";
-    script.onload = function () {
+    script.onload = () => {
       if (!erudaWindow) return;
       erudaWindow.eruda.init();
       erudaWindow.eruda.show();
@@ -119,7 +110,7 @@ function hideBar() {
     "search-icon",
     "navbtn",
   ];
-  classesToHide.forEach((className) => {
+  classesToHide.forEach(className => {
     const elements = document.getElementsByClassName(className);
     for (let i = 0; i < elements.length; i++) {
       elements[i].style.display = "none";

@@ -3,7 +3,10 @@
   "version": "2.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "format": "biome format --write .",
+    "precommit": "biome check --write .",
+    "lint": "biome lint --write ."
   },
   "author": "XenonNet",
   "license": "GPL-3.0-or-later",
@@ -12,5 +15,9 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "jquery": "^3.7.1"
-  }
+  },
+    "devDependencies": {
+    "@biomejs/biome": "1.8.3"
+  },
+    "packageManager": "pnpm@9.5.0"
 }

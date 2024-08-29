@@ -1,16 +1,16 @@
 let loadedImages = 0; // Initialize a counter for loaded images
-window.addEventListener("load", (event) => {
+window.addEventListener("load", event => {
   const gameContainer = document.getElementById("game-container");
   const text = document.getElementById("text");
 
   try {
     fetch("/assets/json/load/games.json")
-      .then((response) => response.json())
-      .then((games) => {
+      .then(response => response.json())
+      .then(games => {
         games.sort((a, b) => a.name.localeCompare(b.name));
         const totalImages = games.length; // Get total number of images
 
-        games.forEach(function (game, gameNum) {
+        games.forEach((game, gameNum) => {
           let gameHtml;
           if (game.usesProxy) {
             gameHtml = `<div class="card" style="padding-top: 5px">
@@ -18,9 +18,7 @@ window.addEventListener("load", (event) => {
                 game.alert ? `alert('${game.alert}'); ` : ""
               }hire('${game.url}');">
                 <div class="image-container">
-                  <img loading="eager" src="${
-                    game.image
-                  }" style="border-radius: 25px" 
+                  <img loading="eager" src="${game.image}" style="border-radius: 25px" 
                        onload="handleImageLoad(${totalImages})">
                   <p class="item-name">${game.name}</p>
                 </div>
@@ -32,9 +30,7 @@ window.addEventListener("load", (event) => {
                 game.alert ? `onclick="alert('${game.alert}');"` : ""
               }>
                 <div class="image-container">
-                  <img loading="eager" src="${
-                    game.image
-                  }" style="border-radius: 25px" 
+                  <img loading="eager" src="${game.image}" style="border-radius: 25px" 
                        onload="handleImageLoad(${totalImages})">
                   <p class="item-name">${game.name}</p>
                 </div>

@@ -1,6 +1,6 @@
 function search() {
-  let searchbarVal = document.getElementById("searchbar").value.toLowerCase();
-  let gameNames = document.getElementsByClassName("card");
+  const searchbarVal = document.getElementById("searchbar").value.toLowerCase();
+  const gameNames = document.getElementsByClassName("card");
   let results = 0;
   for (let t = 0; t < gameNames.length; t++) {
     if (gameNames[t].innerText.toLowerCase().includes(searchbarVal)) {
@@ -10,7 +10,7 @@ function search() {
       gameNames[t].style.display = "none";
     }
   }
-  let noResultsElement = document.getElementById("no-results");
+  const noResultsElement = document.getElementById("no-results");
   if (noResultsElement) {
     if (results == 0) {
       noResultsElement.style.display = "block";
@@ -20,7 +20,7 @@ function search() {
   }
 }
 
-document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", e => {
   if (
     [
       "ArrowUp",
@@ -36,7 +36,7 @@ document.addEventListener("keydown", function (e) {
   )
     return;
 
-  let searchbar = document.getElementById("searchbar");
+  const searchbar = document.getElementById("searchbar");
   searchbar.focus();
   if (e.toLowerCase() != e.toUpperCase()) searchbar.value += e.key;
 });

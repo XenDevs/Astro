@@ -2,149 +2,149 @@
   {
     "name": ". Request An App",
     "url": "https://forms.gle/cKY7QpEgcG45qxS39",
-    "image": "/img/jotform.png",
+    "image": "/assets/media/icons/jotform.png",
     "usesProxy": true
   },
   {
     "name": "9Anime",
     "url": "https://9animetv.to/",
-    "image": "/assets/apps/9anime.jpg"
+    "image": "/assets/media/icons/9anime.jpg"
   },
   {
     "name": "Amazon",
     "url": "https://amazon.com/",
-    "image": "/assets/apps/amazon.png"
+    "image": "/assets/media/icons/amazon.png"
   },
   {
     "name": "Bingewatch.To",
     "url": "https://bingewatch.to/",
-    "image": "assets/apps/bingewatch.png"
+    "image": "assets/media/icons/bingewatch.png"
   },
   {
     "name": "BuzzFeed Quizzes",
     "url": "https://buzzfeed.com/quizzes",
-    "image": "assets/apps/buzzfeed.png"
+    "image": "assets/media/icons/buzzfeed.png"
   },
   {
     "name": "ChatGPT",
     "url": "https://chatgptfree.ai/chat/",
-    "image": "assets/apps/chatgpt.png"
+    "image": "assets/media/icons/chatgpt.png"
   },
   {
     "name": "Chess.com",
     "url": "https://chess.com",
-    "image": "assets/apps/chess.png"
+    "image": "assets/media/icons/chess.png"
   },
   {
     "name": "Cool Math Games",
     "url": "https://coolmathgames.com",
-    "image": "assets/apps/coolmath.png"
+    "image": "assets/media/icons/coolmath.png"
   },
   {
     "name": "Crazy Games",
     "url": "https://www.crazygames.com/",
-    "image": "assets/apps/crazygames.png"
+    "image": "assets/media/icons/crazygames.png"
   },
   {
     "name": "Deep AI",
     "url": "https://deep.ai/",
-    "image": "assets/apps/deep.png"
+    "image": "assets/media/icons/deep.png"
   },
   {
     "name": "Discord",
     "url": "https://canary.discord.com",
-    "image": "assets/apps/discord.jpg",
+    "image": "assets/media/icons/discord.jpg",
     "broken": "True"
   },
   {
     "name": "DuckDuckGo",
     "url": "https://start.duckduckgo.com/",
-    "image": "assets/apps/duckduckgo.png"
+    "image": "assets/media/icons/duckduckgo.png"
   },
   {
     "name": "ESPN",
     "url": "https://www.espn.com/watch/",
-    "image": "assets/apps/espn.webp"
+    "image": "assets/media/icons/espn.webp"
   },
   {
     "name": "FlixHQ",
     "url": "https://direct.gmsmedia.pics/",
-    "image": "assets/apps/flixhq.png"
+    "image": "assets/media/icons/flixhq.png"
   },
   {
     "name": "FzMovies",
     "url": "https://www.fzmovies.net/",
-    "image": "assets/apps/fzmovies.webp"
+    "image": "assets/media/icons/fzmovies.webp"
   },
   {
     "name": "Geforce NOW",
     "url": "https://play.geforcenow.com/mall/#/layout/games",
-    "image": "assets/apps/geforce-now.png"
+    "image": "assets/media/icons/geforce-now.png"
   },
   {
     "name": "Github",
     "url": "https://github.com/",
-    "image": "assets/apps/github.png"
+    "image": "assets/media/icons/github.png"
   },
   {
     "name": "Google Gemini (AI)",
     "url": "https://gemini.google.com",
-    "image": "assets/apps/gemini.webp"
+    "image": "assets/media/icons/gemini.webp"
   },
   {
     "name": "Google",
     "url": "https://google.com",
-    "image": "assets/apps/google.png"
+    "image": "assets/media/icons/google.png"
   },
   {
     "name": "HBO Max",
     "url": "https://www.hbomax.com/",
-    "image": "assets/apps/hbo.webp"
+    "image": "assets/media/icons/hbo.webp"
   },
   {
     "name": "Hulu",
     "url": "https://www.hulu.com/",
-    "image": "assets/apps/hulu.png"
+    "image": "assets/media/icons/hulu.png"
   },
   {
     "name": "Mathway",
     "url": "https://www.mathway.com/Algebra",
-    "image": "assets/apps/mathway.webp"
+    "image": "assets/media/icons/mathway.webp"
   },
   {
     "name": "Netflix",
     "url": "e",
-    "image": "assets/apps/netflix.png"
+    "image": "assets/media/icons/netflix.png"
   },
   {
     "name": "Now.GG",
     "url": "https://now.gg/",
-    "image": "assets/apps/nowgg.png"
+    "image": "assets/media/icons/nowgg.png"
   },
   {
     "name": "Paramount",
     "url": "https://www.paramountplus.com/",
-    "image": "assets/apps/paramount.png"
+    "image": "assets/media/icons/paramount.png"
   },
   {
     "name": "Pinterest",
     "url": "https://pinterest.fr",
-    "image": "assets/apps/pinterest.png"
+    "image": "assets/media/icons/pinterest.png"
   },
   {
     "name": "Pixlr",
     "url": "https://pixlr.com/",
-    "image": "assets/apps/pixlr.jpeg"
+    "image": "assets/media/icons/pixlr.jpeg"
   },
   {
     "name": "Poki",
     "url": "https://poki.com",
-    "image": "assets/apps/poki.png"
+    "image": "assets/media/icons/poki.png"
   },
   {
     "name": "Reddit",
     "url": "https://www.redditery.com/",
-    "image": "assets/apps/reddit.png"
+    "image": "assets/media/icons/reddit.png"
   },
   {
     "name": "Roblox",
@@ -155,69 +155,69 @@
   {
     "name": "Spotify",
     "url": "https://open.spotify.com/",
-    "image": "assets/apps/spotify.png",
+    "image": "assets/media/icons/spotify.png",
     "alert": "This app is currently not working."
   },
   {
     "name": "SoundCloud",
     "url": "https://soundcloud.com/",
-    "image": "assets/apps/soundcloud.jpg"
+    "image": "assets/media/icons/soundcloud.jpg"
   },
   {
     "name": "Scratch",
     "url": "https://scratch.mit.edu/",
-    "image": "assets/apps/scratch.webp",
+    "image": "assets/media/icons/scratch.webp",
     "usesProxy": true
   },
   {
     "name": "Twitch",
     "url": "https://www.twitch.tv/",
-    "image": "assets/apps/twitch-tv.png"
+    "image": "assets/media/icons/twitch-tv.png"
   },
   {
     "name": "Tiktok",
     "url": "https://tiktok.com/",
-    "image": "assets/apps/tiktok.png"
+    "image": "assets/media/icons/tiktok.png"
   },
   {
     "name": "Tumblr",
     "url": "https://www.tumblr.com/",
-    "image": "assets/apps/tumblr.png"
+    "image": "assets/media/icons/tumblr.png"
   },
   {
     "name": "Twitter",
     "url": "https://twitter.com/",
-    "image": "assets/apps/twitter.png"
+    "image": "assets/media/icons/twitter.png"
   },
   {
     "name": "VS Code",
     "url": "https://vscode.dev/",
-    "image": "assets/apps/vscode.png"
+    "image": "assets/media/icons/vscode.png"
   },
   {
     "name": "WattPad",
     "url": "https://wattpad.com/",
-    "image": "assets/apps/wattpad.jpg"
+    "image": "assets/media/icons/wattpad.jpg"
   },
   {
     "name": "Y8 Games",
     "url": "https://y8.com/",
-    "image": "assets/apps/y8.png"
+    "image": "assets/media/icons/y8.png"
   },
   {
     "name": "Youtube",
     "url": "https://vid.puffyan.us/feed/popular",
-    "image": "assets/apps/yt.png"
+    "image": "assets/media/icons/yt.png"
   },
   {
     "name": "Snapchat",
     "url": "https://now.gg/apps/aptoide/5874/aptoide.html",
-    "image": "/assets/apps/snapchat.png",
+    "image": "/assets/media/icons/snapchat.png",
     "alert": "Search up snapchat, then download it and log in."
   },
   {
     "name": "Youtube Music",
     "url": "https://music.youtube.com/",
-    "image": "assets/apps/ytm.avif"
+    "image": "assets/media/icons/ytm.avif"
   }
 ]

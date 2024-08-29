@@ -18,7 +18,7 @@ async function fetchTmdbId() {
     for (const movie of results) {
       const poster = movie.poster_path
         ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
-        : "/img/no-media.svg";
+        : "/assets/media/icons/no-media.svg";
 
       let gameHtml;
       if (movie.media_type === "tv") {

@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const settingsDefaultTab = {
   title: "Dashboard",
-  icon: "/img/canvas.ico",
+  icon: "/assets/media/favicon/Canvas.ico",
 };
 
 function setTitle(title = "") {
@@ -117,7 +117,7 @@ function setCloak() {
 
 function resetTab() {
   document.title = "Dashboard";
-  document.querySelector("link[rel='icon']").href = "/img/canvas.ico";
+  document.querySelector("link[rel='icon']").href = "/assets/media/favicon/";
   const titleElement = document.getElementById("title");
   const iconElement = document.getElementById("icon");
   if (titleElement) titleElement.value = "";
@@ -153,12 +153,12 @@ function cloak() {
       const link = doc.createElement("link");
 
       const tab = localStorage.getItem("tab");
-      let tabData = { title: "Dashboard", icon: "/img/canvas.ico" };
+      let tabData = { title: "Dashboard", icon: "/assets/media/favicon/" };
       if (tab) {
         try {
           tabData = JSON.parse(tab);
         } catch {
-          tabData = { title: "Dashboard", icon: "/img/canvas.ico" };
+          tabData = { title: "Dashboard", icon: "/assets/media/favicon/" };
         }
       }
 

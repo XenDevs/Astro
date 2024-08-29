@@ -163,7 +163,7 @@ function cloak() {
       const iframe = doc.createElement("iframe");
       const link = doc.createElement("link");
       const name = tabData.title || "Dashboard";
-      const icon = tabData.icon || "/img/canvas.ico";
+      const icon = tabData.icon || "/assets/media/favicon/Canvas.ico";
 
       doc.title = name;
       link.rel = "icon";

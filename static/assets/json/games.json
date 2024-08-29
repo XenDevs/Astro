@@ -2,19 +2,19 @@
   {
     "name": ". Request A Game",
     "url": "https://forms.gle/cKY7QpEgcG45qxS39",
-    "image": "/img/jotform.png",
+    "image": "/assets/media/icons/jotform.png",
     "usesProxy": true
   },
   {
     "name": "[!] Bug Reports",
     "url": "https://forms.gle/st5iQsJ3AUrspRRv8",
-    "image": "/img/bug.webp",
+    "image": "/assets/media/icons/bug.webp",
     "usesProxy": false
   },
   {
     "name": "Eaglercraft Hacks",
     "url": "/misc/11eaglercraft/index.html",
-    "image": "/img/no.webp",
+    "image": "/assets/media/icons/no.webp",
     "usesProxy": false
   },
   {
@@ -182,7 +182,7 @@
   {
     "name": "Wings.io",
     "url": "https://wings.io/",
-    "image": "/img/games/wings.webp",
+    "image": "assets/media/icons/wings.webp",
     "usesProxy": true
   },
   {
@@ -236,7 +236,7 @@
   {
     "name": "Connections",
     "url": "https://1games.io/game/connections-game/",
-    "image": "/img/games/connections.webp",
+    "image": "assets/media/icons/connections.webp",
     "usesProxy": true
   },
   {
@@ -308,13 +308,13 @@
   {
     "name": "Diep.Io",
     "url": "https://diep.io/",
-    "image": "/img/games/diep.webp",
+    "image": "assets/media/icons/diep.webp",
     "usesProxy": true
   },
   {
     "name": "Taming.Io",
     "url": "https://taming.io/",
-    "image": "/img/games/taming.webp",
+    "image": "assets/media/icons/taming.webp",
     "usesProxy": true
   },
   {
@@ -392,7 +392,7 @@
   {
     "name": "EA Sports FC24",
     "url": "https://now.gg/iframe/snippet?app_pkg=com.ea.gp.fifamobile&partner=astro",
-    "image": "/img/games/easportsfc.webp",
+    "image": "assets/media/icons/easportsfc.webp",
     "usesProxy": true
   },
   {
@@ -434,7 +434,7 @@
   {
     "name": "E Parkour.Io",
     "url": "https://eparkour.io/",
-    "image": "/img/games/eparkour.webp",
+    "image": "assets/media/icons/eparkour.webp",
     "usesProxy": true
   },
   {
@@ -446,13 +446,13 @@
   {
     "name": "Bandit.RIP",
     "url": "https://bandit.rip/",
-    "image": "/img/games/bandit.webp",
+    "image": "assets/media/icons/bandit.webp",
     "usesProxy": true
   },
   {
     "name": "Snowball.io",
     "url": "https://games.crazygames.com/en_US/snowball-io/index.html",
-    "image": "/img/games/snowball.webp",
+    "image": "assets/media/icons/snowball.webp",
     "usesProxy": true
   },
   {
@@ -518,7 +518,7 @@
   {
     "name": "Flight Pilot Airplane",
     "url": "https://html5.gamedistribution.com/rvvASMiM/895b66741b8a411fa92cc58f3a309b23/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzg5NWI2Njc0MWI4YTQxMWZhOTJjYzU4ZjNhMzA5YjIzLyIsInBhcmVudERvbWFpbiI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidG9wRG9tYWluIjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
-    "image": "/img/games/fpag24.webp",
+    "image": "assets/media/icons/fpag24.webp",
     "usesProxy": true
   },
   {
@@ -584,13 +584,13 @@
   {
     "name": "Fortnite",
     "url": "https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&lang=en_US&asset-id=01_94ff5082-1d9e-40a3-9829-9a1abcbea7cc",
-    "image": "/img/games/fortnite.jpeg",
+    "image": "assets/media/icons/fortnite.jpeg",
     "usesProxy": true
   },
   {
     "name": "Fortnite (Mobile)",
     "url": "https://now.gg/apps/aptoide/5874/aptoide.html",
-    "image": "/img/games/fortnite.jpeg",
+    "image": "assets/media/icons/fortnite.jpeg",
     "alert": "Search up fortnite, download and play.",
     "usesProxy": true
   },
@@ -627,7 +627,7 @@
   {
     "name": "Gimme the Airpod",
     "url": "/misc/gimme-the-airpod/index.html",
-    "image": "/img/games/gimmetheairpod.webp",
+    "image": "assets/media/icons/gimmetheairpod.webp",
     "usesProxy": false
   },
   {
@@ -639,7 +639,7 @@
   {
     "name": "Google Baseball",
     "url": "https://www.google.com/logos/2019/july4th19/r6/july4th19.html",
-    "image": "/img/games/googlebaseball.webp",
+    "image": "assets/media/icons/googlebaseball.webp",
     "usesProxy": true
   },
   {
@@ -693,13 +693,13 @@
   {
     "name": "Toss the Turtle",
     "url": "https://toss-the-turtle.game-files.crazygames.com/ruffle/tosstheturtle.html?czyExpInstantFun=disabled&v=1.277",
-    "image": "/img/games/turtle.webp",
+    "image": "assets/media/icons/turtle.webp",
     "usesProxy": true
   },
   {
     "name": "Infinite Craft",
     "url": "https://infinite-craft.com/infinite-craft/",
-    "image": "/img/games/infinitecraft.webp",
+    "image": "assets/media/icons/infinitecraft.webp",
     "usesProxy": true
   },
   {
@@ -771,7 +771,7 @@
   {
     "name": "Hornex.pro",
     "url": "https://hornex.pro",
-    "image": "/img/games/hornexpro.jpeg",
+    "image": "assets/media/icons/hornexpro.jpeg",
     "usesProxy": true
   },
   {
@@ -825,7 +825,7 @@
   {
     "name": "KARLSON'T",
     "url": "https://jankiestgame.netlify.app/",
-    "image": "/img/no.webp",
+    "image": "/assets/media/icons/no.webp",
     "usesProxy": true
   },
   {
@@ -837,13 +837,13 @@
   {
     "name": "King Kong Kart Racing",
     "url": "https://marketjs.cdn.start.gg/9pdzcjml52r3/v16/index.html",
-    "image": "/img/games/kkkr.webp",
+    "image": "assets/media/icons/kkkr.webp",
     "usesProxy": true
   },
   {
     "name": "kour.io",
     "url": "https://kour.io",
-    "image": "/img/games/kour.webp",
+    "image": "assets/media/icons/kour.webp",
     "usesProxy": true
   },
   {
@@ -885,13 +885,13 @@
   {
     "name": "Learn to Fly 3",
     "url": "https://www.silvergames.com/en/learn-to-fly-3/iframe",
-    "image": "/img/games/learntofly3.webp",
+    "image": "assets/media/icons/learntofly3.webp",
     "usesProxy": true
   },
   {
     "name": "Madalin Cars Multiplayer",
     "url": "https://games.crazygames.com/en_US/madalin-cars-multiplayer/index.html",
-    "image": "/img/games/mcm.webp",
+    "image": "assets/media/icons/mcm.webp",
     "usesProxy": true
   },
   {
@@ -1089,7 +1089,7 @@
   {
     "name": "Papas Cheeseria",
     "url": "https://papas-cheeseria.game-files.crazygames.com/ruffle/papas-cheeseria/3/game.html?v=1.285",
-    "image": "/img/games/papascheeseria.webp",
+    "image": "assets/media/icons/papascheeseria.webp",
     "usesProxy": true
   },
   {
@@ -1185,7 +1185,7 @@
   {
     "name": "Pokemon Showdown",
     "url": "https://play.pokemonshowdown.com/",
-    "image": "/img/games/pshow.jpeg",
+    "image": "assets/media/icons/pshow.jpeg",
     "usesProxy": true
   },
   {
@@ -1203,7 +1203,7 @@
   {
     "name": "Unicycle Hero",
     "url": "https://unicyclehero.github.io/file/",
-    "image": "/img/games/hero.webp",
+    "image": "assets/media/icons/hero.webp",
     "usesProxy": true
   },
   {
@@ -1215,25 +1215,25 @@
   {
     "name": "Rainbow Tower",
     "url": "https://www.mathplayground.com/mobile_rainbow_tower/index.html",
-    "image": "/img/games/rainbowtower.png",
+    "image": "assets/media/icons/rainbowtower.png",
     "usesProxy": true
   },
   {
     "name": "Big Tower Tiny Square",
     "url": "https://www.coolmathgames.com/0-big-tower-tiny-square/play",
-    "image": "/img/games/btts.webp",
+    "image": "assets/media/icons/btts.webp",
     "usesProxy": true
   },
   {
     "name": "Big Flappy Tower Tiny Square",
     "url": "https://big-flappy-tower-vs-tiny-square.game-files.crazygames.com/big-flappy-tower-vs-tiny-square/1/index.html",
-    "image": "/img/games/flappy.webp",
+    "image": "assets/media/icons/flappy.webp",
     "usesProxy": true
   },
   {
     "name": "nzp.gay (COD ZOMBIES)",
     "url": "https://nzp.gay/",
-    "image": "/img/games/codzombie.webp",
+    "image": "assets/media/icons/codzombie.webp",
     "usesProxy": true
   },
   {
@@ -1305,7 +1305,7 @@
   {
     "name": "Resent Client 1.8",
     "url": "/misc/eaglercraftx/r/index.html",
-    "image": "/img/games/res.webp",
+    "image": "assets/media/icons/res.webp",
     "usesProxy": false
   },
   {
@@ -1336,7 +1336,7 @@
   {
     "name": "Half Life",
     "url": "https://pixelsuft.github.io/hl/xash.html#150",
-    "image": "/img/games/halflife.webp",
+    "image": "assets/media/icons/halflife.webp",
     "usesProxy": true
   },
   {
@@ -1366,19 +1366,19 @@
   {
     "name": "Skribble.IO",
     "url": "https://skribbl.io/",
-    "image": "/img/games/skribble.webp",
+    "image": "assets/media/icons/skribble.webp",
     "usesProxy": true
   },
   {
     "name": "Space Company",
     "url": "https://sparticle999.github.io/SpaceCompany/",
-    "image": "/img/games/space.webp",
+    "image": "assets/media/icons/space.webp",
     "usesProxy": true
   },
   {
     "name": "Rocket League",
     "url": "/misc/geforce-now/",
-    "image": "/img/games/rl.webp",
+    "image": "assets/media/icons/rl.webp",
     "usesProxy": false
   },
   {
@@ -1426,7 +1426,7 @@
   {
     "name": "Soccer Bros",
     "url": "https://soccerbros.gg/?cg=1",
-    "image": "/img/games/SoccerBros.webp",
+    "image": "assets/media/icons/SoccerBros.webp",
     "usesProxy": true
   },
   {
@@ -1480,7 +1480,7 @@
   {
     "name": "buildnow.gg",
     "url": "https://games.crazygames.com/en_US/buildnow-gg/index.html?v=1.279",
-    "image": "/img/games/buildnow.webp",
+    "image": "assets/media/icons/buildnow.webp",
     "usesProxy": true
   },
   {
@@ -1726,31 +1726,31 @@
   {
     "name": "digdig.io",
     "url": "https://digdig.io/",
-    "image": "/img/games/digdigio.webp",
+    "image": "assets/media/icons/digdigio.webp",
     "usesProxy": true
   },
   {
     "name": "Buckshot Roulette",
     "url": "/misc/buckshot/index.html",
-    "image": "/img/games/buckshot.webp",
+    "image": "assets/media/icons/buckshot.webp",
     "usesProxy": false
   },
   {
     "name": "deadshot.io",
     "url": "https://deadshot.io/",
-    "image": "/img/games/deadshot.webp",
+    "image": "assets/media/icons/deadshot.webp",
     "usesProxy": true
   },
   {
     "name": "powerline.io",
     "url": "https://powerline.io/",
-    "image": "/img/games/powerline.webp",
+    "image": "assets/media/icons/powerline.webp",
     "usesProxy": true
   },
   {
     "name": "GBA Games",
     "url": "https://real-sgs.vercel.app/Tools/GBA-Emulator",
-    "image": "/img/games/gba.webp",
+    "image": "assets/media/icons/gba.webp",
     "usesProxy": true
   }
 ]

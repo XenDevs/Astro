@@ -193,7 +193,7 @@ function cloak() {
   }
 }
 
-fetch("https://api.github.com/repos/55gms/55gms/commits")
+fetch("https://api.github.com/repos/xenonnet/astro/commits")
   .then(response => response.json())
   .then(data => {
     const lastCommitDate = new Date(data[0].commit.author.date).toLocaleDateString();

@@ -9,4 +9,4 @@
 
 ## Reporting a Vulnerability
 
-Report a vulnerability <a href='https://github.com/55gms/55GMS/security/advisories/new'>here</a>
+Report a vulnerability <a href='https://github.com/XenonNet/Astro/security/advisories/new'>here</a>

@@ -391,7 +391,7 @@
   },
   {
     "name": "EA Sports FC24",
-    "url": "https://now.gg/iframe/snippet?app_pkg=com.ea.gp.fifamobile&partner=55gms",
+    "url": "https://now.gg/iframe/snippet?app_pkg=com.ea.gp.fifamobile&partner=astro",
     "image": "/img/games/easportsfc.webp",
     "usesProxy": true
   },
@@ -1310,7 +1310,7 @@
   },
   {
     "name": "Roblox",
-    "url": "https://now.gg/iframe/snippet?app_pkg=com.roblox.client&partner=gms",
+    "url": "https://now.gg/iframe/snippet?app_pkg=com.roblox.client&partner=astro",
     "image": "/misc/roblos/rbx.jpeg",
     "usesProxy": true,
     "alert": "If it says proxy dectected, reload the page and try again up to 5 times."

@@ -142,7 +142,7 @@
   },
   {
     "name": "Roblox",
-    "url": "https://now.gg/iframe/snippet?app_pkg=com.roblox.client&partner=gms",
+    "url": "https://now.gg/iframe/snippet?app_pkg=com.roblox.client&partner=astro",
     "image": "misc/roblos/rbx.jpeg",
     "alert": "If it says proxy detected, reload up to 5 times."
   },

@@ -73,40 +73,43 @@ function setCloak() {
   const cloak = cloakElement.value;
 
   const cloakSettings = {
-    search: { title: "Google", favicon: "/assets/cloaks/Google Search.ico" },
+    search: { title: "Google", favicon: "/assets/media/favicon/Google Search.ico" },
     wikipedia: {
       title: "Wikipedia, the free encyclopedia",
-      favicon: "/assets/cloaks/Wikipedia.ico",
+      favicon: "/assets/media/favicon/Wikipedia.ico",
     },
-    bsite: { title: "Billibilli", favicon: "/assets/cloaks/Billibilli.ico" },
+    bsite: { title: "Billibilli", favicon: "/assets/media/favicon/Billibilli.ico" },
     drive: {
       title: "My Drive - Google Drive",
-      favicon: "/assets/cloaks/Google Drive.ico",
+      favicon: "/assets/media/favicon/Google Drive.ico",
     },
-    gmail: { title: "Gmail", favicon: "/assets/cloaks/Gmail.ico" },
-    calendar: { title: "Google Calendar", favicon: "/assets/cloaks/Calendar.ico" },
-    meets: { title: "Google Meet", favicon: "/assets/cloaks/Meet.ico" },
-    classroom: { title: "Classes", favicon: "/assets/cloaks/Classroom.png" },
-    canvas: { title: "Dashboard", favicon: "/assets/cloaks/Canvas.ico" },
-    zoom: { title: "Zoom", favicon: "/assets/cloaks/Zoom.ico" },
+    gmail: { title: "Gmail", favicon: "/assets/media/favicon/Gmail.ico" },
+    calendar: {
+      title: "Google Calendar",
+      favicon: "/assets/media/favicon/Calendar.ico",
+    },
+    meets: { title: "Google Meet", favicon: "/assets/media/favicon/Meet.ico" },
+    classroom: { title: "Classes", favicon: "/assets/media/favicon/Classroom.png" },
+    canvas: { title: "Dashboard", favicon: "/assets/media/favicon/Canvas.ico" },
+    zoom: { title: "Zoom", favicon: "/assets/media/favicon/Zoom.ico" },
     khan: {
       title: "Dashboard | Khan Academy",
-      favicon: "/assets/cloaks/Khan Academy.ico",
+      favicon: "/assets/media/favicon/Khan Academy.ico",
     },
     itchio: {
       title: "Download the latest indie games - itch.io",
-      favicon: "/assets/cloaks/itchio.ico",
+      favicon: "/assets/media/favicon/itchio.ico",
     },
     deltamath: {
       title: "DeltaMath Student Application",
-      favicon: "/assets/cloaks/deltamath.png",
+      favicon: "/assets/media/favicon/deltamath.png",
     },
-    ed: { title: "Edpuzzle", favicon: "/assets/cloaks/edpuzzle.png" },
+    ed: { title: "Edpuzzle", favicon: "/assets/media/favicon/edpuzzle.png" },
   };
 
   const settings = cloakSettings[cloak] || {
     title: "Dashboard",
-    favicon: "/assets/cloaks/Canvas.ico",
+    favicon: "/assets/media/favicon/Canvas.ico",
   };
   setTitle(settings.title);
   setFavicon(settings.favicon);

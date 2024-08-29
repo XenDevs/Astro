@@ -1,5 +1,11 @@
 [
   {
+    "name": ". Request An App",
+    "url": "https://forms.gle/cKY7QpEgcG45qxS39",
+    "image": "/img/jotform.png",
+    "usesProxy": true
+  },
+  {
     "name": "9Anime",
     "url": "https://9animetv.to/",
     "image": "/assets/apps/9anime.jpg"

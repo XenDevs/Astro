@@ -4,7 +4,7 @@ window.addEventListener("load", event => {
   const text = document.getElementById("text");
 
   try {
-    fetch("/assets/json/games.json")
+    fetch("/assets/json/games.json?v=2")
       .then(response => response.json())
       .then(games => {
         games.sort((a, b) => a.name.localeCompare(b.name));

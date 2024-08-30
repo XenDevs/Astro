@@ -9,10 +9,10 @@ window.addEventListener("load", async () => {
 
     for (const game of apps) {
       const gameHtml = `
-        <div class="card" style="padding-top: 5px">
+        <div class="card">
           <a href="#" onclick="${game.alert ? `alert('${game.alert}');` : ""} hire('${game.url}'); return false;">
             <div class="image-container">
-              <img loading="lazy" src="${game.image}" style="border-radius: 25px" alt="${game.name}">
+              <img loading="lazy" src="${game.image}" alt="${game.name}">
               <p class="item-name">${game.name}</p>
             </div>
           </a>

@@ -3,3 +3,5 @@ node_modules
 .DS_Store
 .hintrc
 .gitpod.yml 
+package-lock.json
+pnpm-lock.yaml
